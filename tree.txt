@@ -1,0 +1,170 @@
+.
+├── alembic
+│   ├── env.py
+│   ├── README
+│   ├── script.py.mako
+│   └── versions
+├── alembic.ini
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+├── scripts
+│   ├── alembic.py
+│   ├── dev.py
+│   └── __pycache__
+│       └── dev.cpython-312.pyc
+├── secrets
+│   ├── app
+│   └── auth
+│       └── public_key.pem
+├── src
+│   ├── messages_service
+│   │   ├── api
+│   │   │   ├── dto
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── parameters.py
+│   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   │   ├── parameters.cpython-312.pyc
+│   │   │   │   │   └── responses.cpython-312.pyc
+│   │   │   │   └── responses.py
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   └── router.cpython-312.pyc
+│   │   │   └── router.py
+│   │   ├── config
+│   │   │   ├── __pycache__
+│   │   │   │   └── settings.cpython-312.pyc
+│   │   │   └── settings.py
+│   │   ├── domain
+│   │   │   ├── __init__.py
+│   │   │   ├── models
+│   │   │   │   ├── enums.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── models.py
+│   │   │   │   └── __pycache__
+│   │   │   │       ├── enums.cpython-312.pyc
+│   │   │   │       ├── __init__.cpython-312.pyc
+│   │   │   │       └── models.cpython-312.pyc
+│   │   │   └── __pycache__
+│   │   │       └── __init__.cpython-312.pyc
+│   │   ├── infrastructure
+│   │   │   ├── db
+│   │   │   │   ├── models.py
+│   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── models.cpython-312.pyc
+│   │   │   │   │   └── setup.cpython-312.pyc
+│   │   │   │   └── setup.py
+│   │   │   ├── http
+│   │   │   │   ├── clients.py
+│   │   │   │   └── __pycache__
+│   │   │   │       └── clients.cpython-312.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── logging.py
+│   │   │   └── __pycache__
+│   │   │       ├── __init__.cpython-312.pyc
+│   │   │       └── logging.cpython-312.pyc
+│   │   ├── __init__.py
+│   │   ├── loader.py
+│   │   ├── main.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── loader.cpython-312.pyc
+│   │   │   └── main.cpython-312.pyc
+│   │   ├── services
+│   │   │   ├── dependencies
+│   │   │   │   ├── db.py
+│   │   │   │   ├── http.py
+│   │   │   │   └── __pycache__
+│   │   │   │       └── db.cpython-312.pyc
+│   │   │   ├── flows
+│   │   │   │   ├── dto
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── parameters.py
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   │   │   ├── parameters.cpython-312.pyc
+│   │   │   │   │   │   └── responses.cpython-312.pyc
+│   │   │   │   │   └── responses.py
+│   │   │   │   ├── _flows.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── __pycache__
+│   │   │   │       ├── _flows.cpython-312.pyc
+│   │   │   │       └── __init__.cpython-312.pyc
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   └── __init__.cpython-312.pyc
+│   │   │   └── queries
+│   │   │       ├── dto
+│   │   │       │   ├── __init__.py
+│   │   │       │   ├── parameters
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   ├── __pycache__
+│   │   │       │   │   │   ├── __init__.cpython-312.pyc
+│   │   │       │   │   │   ├── users.cpython-312.pyc
+│   │   │       │   │   │   └── users_profile.cpython-312.pyc
+│   │   │       │   │   ├── users_profile.py
+│   │   │       │   │   └── users.py
+│   │   │       │   ├── __pycache__
+│   │   │       │   │   └── __init__.cpython-312.pyc
+│   │   │       │   └── responses
+│   │   │       │       ├── __init__.py
+│   │   │       │       ├── __pycache__
+│   │   │       │       │   ├── __init__.cpython-312.pyc
+│   │   │       │       │   ├── users.cpython-312.pyc
+│   │   │       │       │   └── users_profile.cpython-312.pyc
+│   │   │       │       ├── users_profile.py
+│   │   │       │       └── users.py
+│   │   │       ├── __init__.py
+│   │   │       ├── __pycache__
+│   │   │       │   └── __init__.cpython-312.pyc
+│   │   │       └── queries
+│   │   │           ├── __pycache__
+│   │   │           │   ├── users_auth.cpython-312.pyc
+│   │   │           │   ├── users.cpython-312.pyc
+│   │   │           │   └── users_profile.cpython-312.pyc
+│   │   │           ├── users_auth.py
+│   │   │           ├── users_profile.py
+│   │   │           └── users.py
+│   │   └── utils
+│   │       ├── dto
+│   │       │   ├── _dto.py
+│   │       │   ├── __init__.py
+│   │       │   ├── __pycache__
+│   │       │   │   ├── _dto.cpython-312.pyc
+│   │       │   │   ├── __init__.cpython-312.pyc
+│   │       │   │   └── schemas.cpython-312.pyc
+│   │       │   └── schemas.py
+│   │       ├── http
+│   │       │   ├── http_client.py
+│   │       │   └── __pycache__
+│   │       │       └── http_client.cpython-312.pyc
+│   │       ├── __init__.py
+│   │       ├── misc.py
+│   │       └── __pycache__
+│   │           ├── auth.cpython-312.pyc
+│   │           ├── __init__.cpython-312.pyc
+│   │           ├── misc.cpython-312.pyc
+│   │           └── session.cpython-312.pyc
+│   └── shared
+│       ├── auth
+│       │   ├── dependencies.py
+│       │   ├── dto.py
+│       │   ├── __init__.py
+│       │   ├── __pycache__
+│       │   │   ├── dependencies.cpython-312.pyc
+│       │   │   ├── dto.cpython-312.pyc
+│       │   │   ├── __init__.cpython-312.pyc
+│       │   │   ├── settings.cpython-312.pyc
+│       │   │   └── utils.cpython-312.pyc
+│       │   ├── settings.py
+│       │   └── utils.py
+│       ├── __init__.py
+│       └── __pycache__
+│           └── __init__.cpython-312.pyc
+├── tests
+│   └── __init__.py
+└── tree.txt
+
+56 directories, 112 files
